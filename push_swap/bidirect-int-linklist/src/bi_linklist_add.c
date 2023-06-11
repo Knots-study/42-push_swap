@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 13:52:07 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 14:50:22 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/11 15:14:28 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,4 @@ int	bi_linklist_add_tail(t_bi_linklist list, int value)
 	tail->next = elem;
 	list->prev = elem;
 	return (0);
-}
-int	bi_linklist_insert(t_bi_linklist list, int value, int pos)
-{
-	
 }
