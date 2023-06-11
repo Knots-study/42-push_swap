@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 13:52:07 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 15:14:28 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/11 16:24:29 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	bi_linklist_add_front(t_bi_linklist list, int value)
 {
 	t_bi_linklist	*elem;
 
-	elem = (t_bi_linklist*)malloc(sizeof(t_bi_linklist));
+	elem = (t_bi_linklist *)malloc(sizeof(t_bi_linklist));
 	if (elem == NULL)
 		return (1);
 	elem->value = value;
@@ -33,7 +33,7 @@ int	bi_linklist_add_tail(t_bi_linklist list, int value)
 	t_bi_linklist	*elem;
 
 	tail = bi_linklist_get_tail(list);
-	elem = (t_bi_linklist*)malloc(sizeof(t_bi_linklist));
+	elem = (t_bi_linklist *)malloc(sizeof(t_bi_linklist));
 	if (elem == NULL)
 		return (1);
 	elem->value = value;
