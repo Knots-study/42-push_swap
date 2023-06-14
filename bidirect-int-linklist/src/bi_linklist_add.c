@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 13:52:07 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 16:24:29 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/14 08:40:09 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,28 @@
 
 int	bi_linklist_add_front(t_bi_linklist list, int value)
 {
-	t_bi_linklist	*elem;
+	BI_Linklist	elem;
 
-	elem = (t_bi_linklist *)malloc(sizeof(t_bi_linklist));
-	if (elem == NULL)
-		return (1);
+	elem = (BI_Linklist)xmalloc(sizeof(t_bi_linklist));
 	elem->value = value;
 	elem->next = list->next;
 	elem->prev = list;
 	elem->next->prev = elem;
 	list->next = elem;
-	return (0);
+	return (true);
 }
 
 int	bi_linklist_add_tail(t_bi_linklist list, int value)
 {
-	t_bi_linklist	*tail;
-	t_bi_linklist	*elem;
+	BI_Linklist	tail;
+	BI_Linklist	elem;
 
 	tail = bi_linklist_get_tail(list);
-	elem = (t_bi_linklist *)malloc(sizeof(t_bi_linklist));
-	if (elem == NULL)
-		return (1);
+	elem = (BI_Linklist)xmalloc(sizeof(t_bi_linklist));
 	elem->value = value;
 	elem->next = list;
 	elem->prev = tail;
 	tail->next = elem;
 	list->prev = elem;
-	return (0);
+	return (true);
 }

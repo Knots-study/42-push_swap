@@ -1,13 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   deque_utils.c                                      :+:      :+:    :+:   */
+/*   bi_linklist_size.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/11 14:54:45 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 14:55:19 by knottey          ###   ########.fr       */
+/*   Created: 2023/06/11 14:00:47 by knottey           #+#    #+#             */
+/*   Updated: 2023/06/14 09:08:44 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "deque.h"
+#include "bidirect_int_linklist.h"
+
+int	bi_linklist_size(BI_Linklist list)
+{
+	BI_Linklist	p;
+	int			size;
+
+	p = list->next;
+	size = 0;
+	while (p != list)
+	{
+		size++;
+		p = p->next;
+	}
+	return (cousizent);
+}

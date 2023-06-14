@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bi_linklist_search.c                               :+:      :+:    :+:   */
+/*   deque_create.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/11 14:00:49 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 16:18:15 by knottey          ###   ########.fr       */
+/*   Created: 2023/06/11 14:53:44 by knottey           #+#    #+#             */
+/*   Updated: 2023/06/12 12:42:49 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "deque.h"
 
-t_bi_linklist	*bi_linklist_search(t_bi_linklist *list, int value)
+Deque	deque_create(void)
 {
-	t_bi_linklist	*p;
+	t_deque	*deque;
 
-	p = list->next;
-	while (p != list)
-	{
-		if (p->value == value)
-			return (p);
-		else
-			p = p->next;
-	}
-	return (NULL);
+	deque = (t_deque *)malloc(sizeof(t_deque));
+	if (deque == NULL)
+		return (NULL);
+	deque->list = bi_linklist_create(void);
+	return (deque);
 }

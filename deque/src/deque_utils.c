@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bi_linklist_get.c                                  :+:      :+:    :+:   */
+/*   deque_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/11 14:00:54 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 16:20:06 by knottey          ###   ########.fr       */
+/*   Created: 2023/06/11 14:54:45 by knottey           #+#    #+#             */
+/*   Updated: 2023/06/14 09:09:57 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "deque.h"
 
-t_bi_linklist	*bi_linklist_get_front(t_bi_linklist list)
+bool	deque_is_empty(Deque deque)
 {
-	return (list->next);
-}
-
-t_bi_linklist	*bi_linklist_get_tail(t_bi_linklist list)
-{
-	return (list->prev);
+	if (bi_linklist_size(deque->list) == 0)
+		return (true);
+	else
+		return (false);
 }

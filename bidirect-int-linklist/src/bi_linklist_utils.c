@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   deque_push.c                                       :+:      :+:    :+:   */
+/*   bi_linklist_utils.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/11 12:59:10 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 14:53:34 by knottey          ###   ########.fr       */
+/*   Created: 2023/06/14 08:29:10 by knottey           #+#    #+#             */
+/*   Updated: 2023/06/14 08:30:45 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "deque.h"
+#include "bidirect_int_linklist.h"
 
-// 両端キューの先頭要素にvalueを追加
-void	deque_push_front(Deque deque, int value)
+void	*xmalloc(size_t size)
 {
-	
+	void	*p;
+
+	p = malloc(size);
+	if (p == NULL)
+		exit(EXIT_FAILURE);
+	return (p);
 }

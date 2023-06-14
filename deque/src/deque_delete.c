@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bi_linklist_size.c                                 :+:      :+:    :+:   */
+/*   deque_delete.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/11 14:00:47 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/11 16:16:44 by knottey          ###   ########.fr       */
+/*   Created: 2023/06/11 14:54:17 by knottey           #+#    #+#             */
+/*   Updated: 2023/06/14 09:05:23 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "deque.h"
 
-int	bi_linklist_size(t_bi_linklist	*list)
+void	deque_delete(Deque deque)
 {
-	t_bi_linklist	*p;
-	int				count;
-
-	p = list->next;
-	count = 0;
-	while (p != list)
-	{
-		count++;
-		p = p->next;
-	}
-	return (count);
+    bi_linklist_delete(deque->list);
+    free(deque);
 }
