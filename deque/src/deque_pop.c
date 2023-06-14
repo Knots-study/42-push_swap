@@ -6,13 +6,13 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:53:18 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 09:10:45 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/14 09:37:12 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "deque.h"
 
-void	deque_pop_front(Deque deque, int value)
+int	deque_pop_front(Deque deque)
 {
 	BI_Linklist	elem;
 	int			value;
@@ -26,7 +26,7 @@ void	deque_pop_front(Deque deque, int value)
 	return (value);
 }
 
-void	deque_pop_back(Deque deque)
+int	deque_pop_back(Deque deque)
 {
 	BI_Linklist	elem;
 	int 		value;

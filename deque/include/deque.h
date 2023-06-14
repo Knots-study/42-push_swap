@@ -6,12 +6,14 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 12:59:05 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 09:11:24 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/14 09:19:02 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEQUE_H
 # define DEQUE_H
+
+#include "bidirect_int_linklist.h"
 
 typedef struct s_deque{
 	t_bi_linklist *list;
