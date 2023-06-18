@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 09:47:17 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 09:47:19 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 10:53:59 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../include/push_swap.h"
 
 void	swap(Deque deque)
 {

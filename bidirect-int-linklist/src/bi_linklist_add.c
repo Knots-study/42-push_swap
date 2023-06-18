@@ -6,13 +6,13 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 13:52:07 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 08:40:09 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:22:52 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "../include/bidirect_int_linklist.h"
 
-int	bi_linklist_add_front(t_bi_linklist list, int value)
+int	bi_linklist_add_front(BI_Linklist list, int value)
 {
 	BI_Linklist	elem;
 
@@ -25,7 +25,7 @@ int	bi_linklist_add_front(t_bi_linklist list, int value)
 	return (true);
 }
 
-int	bi_linklist_add_tail(t_bi_linklist list, int value)
+int	bi_linklist_add_tail(BI_Linklist list, int value)
 {
 	BI_Linklist	tail;
 	BI_Linklist	elem;

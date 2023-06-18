@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 15:53:24 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 08:32:32 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:11:54 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "../include/bidirect_int_linklist.h"
 
 void	bi_linklist_clear(BI_Linklist list)
 {
@@ -21,7 +21,7 @@ void	bi_linklist_clear(BI_Linklist list)
 	while (p != list)
 	{
 		tmp = p->next;
-		free(p)
+		free(p);
 		p = tmp;
 	}
 	list->next = list;

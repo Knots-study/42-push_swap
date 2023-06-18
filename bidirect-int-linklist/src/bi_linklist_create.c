@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:53:01 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 08:42:31 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:07:42 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "../include/bidirect_int_linklist.h"
 
 BI_Linklist	bi_linklist_create(void)
 {

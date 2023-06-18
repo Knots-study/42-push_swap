@@ -6,18 +6,18 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:00:54 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 08:34:27 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:16:09 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "../include/bidirect_int_linklist.h"
 
-BI_Linklist bi_linklist_get_front(t_bi_linklist list)
+BI_Linklist bi_linklist_get_head(BI_Linklist list)
 {
 	return (list->next);
 }
 
-BI_Linklist bi_linklist_get_tail(t_bi_linklist list)
+BI_Linklist bi_linklist_get_tail(BI_Linklist list)
 {
 	return (list->prev);
 }

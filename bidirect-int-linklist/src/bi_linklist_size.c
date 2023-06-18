@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:00:47 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 09:08:44 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:24:42 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "../include/bidirect_int_linklist.h"
 
 int	bi_linklist_size(BI_Linklist list)
 {
@@ -24,5 +24,5 @@ int	bi_linklist_size(BI_Linklist list)
 		size++;
 		p = p->next;
 	}
-	return (cousizent);
+	return (size);
 }

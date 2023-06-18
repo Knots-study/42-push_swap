@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 08:29:10 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 08:30:45 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:08:20 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bidirect_int_linklist.h"
+#include "../include/bidirect_int_linklist.h"
 
 void	*xmalloc(size_t size)
 {

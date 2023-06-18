@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:53:18 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 09:37:12 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:06:53 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "deque.h"
+#include "../include/deque.h"
 
 int	deque_pop_front(Deque deque)
 {

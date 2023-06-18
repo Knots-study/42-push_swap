@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:53:44 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/12 12:42:49 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:11:11 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "deque.h"
+#include "../include/deque.h"
 
 Deque	deque_create(void)
 {
@@ -19,6 +19,6 @@ Deque	deque_create(void)
 	deque = (t_deque *)malloc(sizeof(t_deque));
 	if (deque == NULL)
 		return (NULL);
-	deque->list = bi_linklist_create(void);
+	deque->list = bi_linklist_create();
 	return (deque);
 }

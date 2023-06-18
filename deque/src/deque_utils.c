@@ -6,11 +6,11 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:54:45 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/14 09:09:57 by knottey          ###   ########.fr       */
+/*   Updated: 2023/06/18 11:07:00 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "deque.h"
+#include "../include/deque.h"
 
 bool	deque_is_empty(Deque deque)
 {
