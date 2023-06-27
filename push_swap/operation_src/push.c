@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations.c                                       :+:      :+:    :+:   */
+/*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/14 09:47:17 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/18 10:53:59 by knottey          ###   ########.fr       */
+/*   Created: 2023/06/18 17:26:58 by knottey           #+#    #+#             */
+/*   Updated: 2023/06/18 18:20:15 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-void	swap(Deque deque)
-{
-	int	first_elem;
-	int	second_elem;
-
-	first_elem = deque_pop_back(deque);
-	second_elem = deque_pop_back(deque);
-	deque_push_back(deque, second_elem);
-	deque_push_back(deque, first_elem);
-}
-
-void	push(Deque to, Deque from)
+static void	push(Deque to, Deque from)
 {
 	int elem;
 
@@ -31,18 +20,14 @@ void	push(Deque to, Deque from)
 	deque_push_back(to, elem);
 }
 
-void	rotate(Deque deque)
+void	push_a(Deque to, Deque from)
 {
-	int	elem;
-
-	elem = deque_pop_front(deque);
-	deque_push_back(deque, elem);
+	push(to, from);
+	ft_putstr("pa\n");
 }
 
-void	reverse_rotate(Deque deque)
+void	push_b(Deque to, Deque from)
 {
-	int	elem;
-
-	elem = deque_pop_back(deque);
-	deque_push_front(deque, elem);
+	push(to, from);
+	ft_putstr("pb\n");
 }
