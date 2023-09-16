@@ -6,14 +6,14 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 12:59:37 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/28 02:55:52 by knottey          ###   ########.fr       */
+/*   Updated: 2023/09/16 16:22:35 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include "../../deque/include/deque.h"
+# include "../../deque/include/deque.h"
 
 long long int	ft_atoi(const char *str);
 void			ft_putstr(const char *str);

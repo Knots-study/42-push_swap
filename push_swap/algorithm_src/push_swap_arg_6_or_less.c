@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/28 02:31:14 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/28 03:06:21 by knottey          ###   ########.fr       */
+/*   Updated: 2023/09/16 16:22:08 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	dfs(Deque stack_a, Deque stack_b, int turn, int ans)
 		return ;
 	}
 	command = 0;
-	while(command <= 10)
+	while (command <= 10)
 	{
 		sort_arg6(*stack_a, *stack_b, command);
 		dfs(stack_a, stack_b, turn + 1, ans);
