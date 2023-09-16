@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 13:59:40 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/18 11:20:40 by knottey          ###   ########.fr       */
+/*   Updated: 2023/09/16 18:59:11 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int	bi_linklist_remove_elem(BI_Linklist elem)
 
 int	bi_linklist_remove_elem_by_value(BI_Linklist list, int value)
 {
-	BI_Linklist p;
-	BI_Linklist prev;
+	BI_Linklist	p;
+	BI_Linklist	prev;
 	int			count;
 
 	p = list->next;
