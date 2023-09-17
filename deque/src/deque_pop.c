@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 14:53:18 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/18 11:06:53 by knottey          ###   ########.fr       */
+/*   Updated: 2023/09/16 19:02:20 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	deque_pop_front(Deque deque)
 {
 	BI_Linklist	elem;
 	int			value;
-	int 		ret;
+	int			ret;
 
 	elem = bi_linklist_get_head(deque->list);
 	value = elem->value;
@@ -29,7 +29,7 @@ int	deque_pop_front(Deque deque)
 int	deque_pop_back(Deque deque)
 {
 	BI_Linklist	elem;
-	int 		value;
+	int			value;
 	int			ret;
 
 	elem = bi_linklist_get_tail(deque->list);

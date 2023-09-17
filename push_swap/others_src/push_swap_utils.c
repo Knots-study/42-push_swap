@@ -6,7 +6,7 @@
 /*   By: knottey <Twitter:@knottey>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/18 17:46:00 by knottey           #+#    #+#             */
-/*   Updated: 2023/06/28 02:22:42 by knottey          ###   ########.fr       */
+/*   Updated: 2023/09/16 19:01:11 by knottey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ long long int	ft_atoi(const char *str)
 	long long int	num;
 	int				sign;
 	size_t			idx;
-	
+
 	num = 0;
 	sign = 1;
 	idx = 0;
